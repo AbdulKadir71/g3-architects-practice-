@@ -137,7 +137,20 @@ main{
     nav h2{
         font-size: 1.5rem;
     }
+    nav {
+        margin: 0 10px;
+        flex-direction: column;
+    }
     nav ul li{
-        margin-left: 13px;
+        margin: 16px;
+    }
+    .features-cotainer {
+        flex-direction: column;
+    }
+    .features-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-content {
+        margin:20px 40px;
     }
 }
