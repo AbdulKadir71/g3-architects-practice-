@@ -92,7 +92,7 @@ nav, .banner{
     width: 100%;
     padding-bottom: 45px;
 }
-main{
+section {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -109,7 +109,7 @@ main{
     gap: 24px;
 }
 .features-content{
-    margin-left: 130px;
+    margin-left: 100px;
     max-width: 530px;
 }
 
@@ -130,6 +130,51 @@ main{
     font-weight: 400;
     line-height: 26px;
     margin: 24px 0;
+}
+.features-you-container {
+    margin-top: 130px;
+    display: flex;
+    gap: 140px;
+}
+
+.features-you-content h3 {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.features-you-content .content-box{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 8px;
+}
+.features-you-content .content-box h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.features-you-content .content-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    color: white;
+    margin-top: -60%;
+    margin-left: -10%;
+}
+.experience-year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 /* responsive media query */
@@ -153,4 +198,25 @@ main{
     .features-content {
         margin:20px 40px;
     }
+}
+
+/* For Medium Device */
+
+@media screen  and (min-width: 576px) and (max-width:992px){
+    nav, .banner{
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0 auto;
+    }
+    .features-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-content {
+        margin: 20px auto;
+    }
+    .features-cotainer {
+        flex-direction: column;
+    }
+    
 }
